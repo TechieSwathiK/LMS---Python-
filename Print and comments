@@ -1,0 +1,24 @@
+# -----------------------------------------------------------
+# PROJECT: My First Python Script
+# PURPOSE: Learning how to use comments and print statements!
+# -----------------------------------------------------------
+
+# This is a single-line comment. The computer skips this line.
+print("Hello, World!")  # This prints a friendly greeting to the screen
+
+# You can use print statements to create a mini text-adventure story
+print("\n--- Space Mission Initialized ---")
+print("Your rocket is on the launchpad...")
+print("3... 2... 1... BLAST OFF! 🚀")
+
+# You can also print blank lines by leaving the parentheses empty
+print() 
+
+# Printing numbers doesn't strictly require quotes, but text always does!
+print("Current Rocket Speed:")
+print(15000) # This prints the number 15000
+print("miles per hour!")
+
+# Final comment: End of the program
+# print("This line won't run because it's commented out!")
+print("\nMission successful. Welcome to space!")
