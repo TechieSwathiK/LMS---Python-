@@ -1,0 +1,11 @@
+# Smart School Day Planner - Topic 1
+if day in ("Saturday", "Sunday"):
+    print("Day type : Weekend - enjoy your free time!")
+elif day == "Monday":
+    print("Day type : First day of the week.")
+elif day == "Friday":
+    print("Day type : Last school day.")
+elif day in ("Tuesday", "Wednesday", "Thursday"):
+    print("Day type : Regular school day.")
+else:
+    print("Day type : Day not recognised.")
