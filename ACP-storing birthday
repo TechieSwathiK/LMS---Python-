@@ -1,0 +1,51 @@
+# -----------------------------------------------------------
+# PROJECT: Birthday Tracker
+# PURPOSE: Store and look up friends' birthdays using a dictionary
+# -----------------------------------------------------------
+
+# Initialize the dictionary with a few sample birthdays
+birthdays = {
+    "Alice": "March 15",
+    "Bob": "October 22",
+    "Charlie": "December 5"
+}
+
+print("--- Welcome to the Birthday Tracker! ---")
+
+# Start an infinite loop to keep the program running
+while True:
+    print("\nWhat would you like to do?")
+    print("1. Look up a birthday")
+    print("2. Add/Update a birthday")
+    print("3. Quit")
+    
+    # Get the user's choice
+    choice = input("Enter choices (1, 2, or 3): ")
+    
+    if choice == "1":
+        # Look up a birthday
+        name = input("Enter the person's name: ")
+        
+        # Check if the name exists in our dictionary
+        if name in birthdays:
+            print(f"🎉 {name}'s birthday is on {birthdays[name]}!")
+        else:
+            print(f"❌ Sorry, I don't have a birthday saved for {name}.")
+            
+    elif choice == "2":
+        # Add or update a birthday
+        name = input("Enter the person's name: ")
+        date = input("Enter their birthday (e.g., July 14): ")
+        
+        # This adds the new key-value pair to the dictionary
+        birthdays[name] = date
+        print(f"✅ Successfully saved {name}'s birthday!")
+        
+    elif choice == "3":
+        # Exit the loop and end the program
+        print("\nGoodbye! Thanks for using Birthday Tracker.")
+        break
+        
+    else:
+        # Handle invalid inputs
+        print("⚠ Invalid option. Please enter 1, 2, or 3.")
